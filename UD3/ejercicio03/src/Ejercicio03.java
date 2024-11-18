@@ -1,14 +1,12 @@
 public class Ejercicio03 {
     public int contarCaracteres (String texto, char caracter){
-        int index = 0;
         int contador = 0;
 
-        for (index = 0; contador.legnth()-1) {
-            if (contador.charAT(index) == caracter) {
+        for (int index = 0; index < texto.length(); index++) {
+            if (texto.charAt(index) == caracter) {
                 contador ++;
-                index ++;
             }
-            return contador;
         }
+        return contador;
     }
 }
