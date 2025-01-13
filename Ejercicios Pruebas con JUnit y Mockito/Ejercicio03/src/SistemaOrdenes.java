@@ -1,5 +1,12 @@
 public class SistemaOrdenes {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+    private ProveedorDescuentos proveedorDescuentos;
+
+    public SistemaOrdenes(ProveedorDescuentos proveedorDescuentos) {
+        this.proveedorDescuentos = proveedorDescuentos;
+    }
+
+    public double calcularTotal(double total) {
+        double descuento = proveedorDescuentos.obtenerDescuento(total);
+        return total - descuento;
     }
 }
