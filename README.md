@@ -1,5 +1,5 @@
-# Mi Repositorio en GitHub  de *Entornos de Desarrollo* :computer:
-## Creado por Marcos Molis Zapata 😎
+# Mi Repositorio de *Entornos de Desarrollo* :computer:
+Creado por Marcos Molis Zapata 😎
 ¡Bienvenido a mi repositorio! Aquí encontrarás una colección de proyectos y recursos útiles organizados por temática. Cada sección está enlazada para facilitar la navegación.<br>
 
 ## Contenido del Repositorio
