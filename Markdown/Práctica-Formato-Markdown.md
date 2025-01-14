@@ -1,24 +1,26 @@
-# Cotenido de Markdwon.
-## Índice
-1. Índice de contenidos. 
-2. Encabezados de nivel 1, 2, 3, y 4.
-3. Cambios tipográficos: negrita, cursiva, negrita y cursiva, tachado, remarcados.
-4. Listas sin orden (usa distintos niveles)
-5. Listas ordenadas (usa distintos niveles)
-6. Snippets de código
-7. Citas
-8. Enlaces a páginas o elementos externos
-9. Enlaces a otros elementos del mismo documento (encabezados u otros)
-10. Imágenes externas
-11. Imágenes con enlace
-12. Tablas
-13. Líneas horizontales
-14. Saltos de línea
-15. Lista de tareas
-16. Emojis
-17. Referencias
-18. Referencias al pie
-19. Fórmulas matemáticas 
+# Cotenido de Markdwon .
+## Marcos Molis Zapata 1º DAM
+---
+### Índice
+1. Índice de contenidos.
+2. [Encabezados de nivel 1, 2, 3, y 4.](#encabezados-de-nivel-1-2-3-y-4)
+3. [Cambios tipográficos: negrita, cursiva, negrita y cursiva, tachado, remarcados.](#cambios-tipográficos-negrita-cursiva-negrita-y-cursiva-tachado-remarcados)
+4. [Listas sin orden (usa distintos niveles)](#listas-ordenadas-usa-distintos-niveles)
+5. [Listas ordenadas (usa distintos niveles)](#listas-ordenadas-usa-distintos-niveles)
+6. [Snippets de código](#snippets-de-código)
+7. [Citas](#citas)
+8. [Enlaces a páginas o elementos externos](#enlaces-a-páginas-o-elementos-externos)
+9. [Enlaces a otros elementos del mismo documento (encabezados u otros)](#enlaces-a-otros-elementos-del-mismo-documento-encabezados-u-otros)
+10. [Imágenes externas](#imágenes-externas)
+11. [Imágenes con enlace](#imágenes-con-enlace)
+12. [Tablas](#tablas)
+13. [Líneas horizontales](#líneas-horizontales)
+14. [Saltos de línea](#saltos-de-línea)
+15. [Lista de tareas](#lista-de-tareas)
+16. [Emojis](#emojis)
+17. [Referencias](#referencias)
+18. [Referencias al pie](#referencias-al-pie)
+19. [Fórmulas matemáticas](#fórmulas-matemáticas) 
 ---
 ## Encabezados de nivel 1, 2, 3, y 4.
 
@@ -39,20 +41,30 @@
 
 ## Listas sin orden (usa distintos niveles)
 
-- Nivel 1.
-- Nivel 2.
-- Nivel 3.  
-- Nivel 4.
-- Nivel 5.
+- Primer nivel
+  - Segundo nivel
+    - Tercer nivel
+      - Cuarto nivel
+  - Otro elemento en el segundo nivel
+- Otro elemento en el primer nivel
+  * Segundo nivel usando asteriscos
+    * Tercer nivel
+      * Cuarto nivel
+  + Otro subelemento 
+- Último elemento del primer nivel
 
 ---
 
 ## Listas ordenadas (usa distintos niveles)
-1. Nivel 1.
-2. Nivel 2.
-3. Nivel 3.  
-4. Nivel 4.
-5. Nivel 5.
+1. Primer nivel
+   1.1. Segundo nivel
+        1.1.1. Tercer nivel
+   1.2. Otro elemento en segundo nivel
+2. Otro elemento en el primer nivel
+   2.1. Segundo nivel
+       2.1.1. Tercer nivel
+           2.1.1.1. Cuarto nivel
+3. Último elemento del primer nivel
 
 ---
 
@@ -117,7 +129,7 @@ Mauris erat quam, accumsan at pretium vel, condimentum non risus. Morbi lectus s
 ---
 
 ## Emojis
-Emoji riendo  :joy:
+Emoji riendo  :joy:<br>
 Emoji inocente :innocent:
 
 ---
@@ -145,6 +157,10 @@ $$
 
 ---
 
+## Enlace a github
+Este enlace va a mi github. [Enlace de github](https://github.com/Marcosmz12/EDES.git)
+
+
 ## Referencias al pie
 
-[^2]: Markdown es un lenguaje creado por John Gruber y Aaron Swartz que se utiliza para formatear texto de manera sencilla y legible.
+[^2]: Markdown es un lenguaje creado por John Gruber y Aaron Swartz que se utiliza para formatear texto de manera sencilla y legible. <br> 
