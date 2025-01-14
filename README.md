@@ -15,7 +15,7 @@
 Si tienes preguntas o sugerencias, no dudes en contactarme:
 
 - Correo: [mmolzap04122@g.educaand.es](mailto:mmolzap0412@g.educaand.es)
-- GitHub: [Mi Perfil](https://github.com/Marcosmz12))
+- GitHub: [Mi Perfil](https://github.com/Marcosmz12)
 
 ---
 
