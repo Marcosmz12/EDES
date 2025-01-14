@@ -16,4 +16,4 @@ Si tienes preguntas o sugerencias, no dudes en contactarme:
 
 ---
 
-¡Gracias por visitar mi repositorio!
+¡Gracias por visitar mi repositorio! 🤙
