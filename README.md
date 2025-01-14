@@ -1,5 +1,22 @@
-# Usted ha entrado al repositorio de *Entornos de Desarrollo* :computer:
+# Mi Repositorio en GitHub  de *Entornos de Desarrollo* :computer:
 ## Creado por Marcos Molis Zapata 😎
-<br>
-Como puede comprobar en este repositorio hay tres carpetas con un contenido diferente en cada una de ellas.<br>
-- [Ejercicios Pruebas con JUnit y Mockito] (https://github.com/Marcosmz12/EDES/tree/main/Ejercicios%20Pruebas%20con%20JUnit%20y%20Mockito)
+¡Bienvenido a mi repositorio! Aquí encontrarás una colección de proyectos y recursos útiles organizados por temática. Cada sección está enlazada para facilitar la navegación.<br>
+
+## Contenido del Repositorio
+
+
+
+
+
+
+
+## Contacto
+
+Si tienes preguntas o sugerencias, no dudes en contactarme:
+
+- Correo: [mmolzap04122@g.educaand.es](mailto:mmolzap0412@g.educaand.es)
+- GitHub: [Mi Perfil](https://github.com/Marcosmz12))
+
+---
+
+¡Gracias por visitar mi repositorio!
