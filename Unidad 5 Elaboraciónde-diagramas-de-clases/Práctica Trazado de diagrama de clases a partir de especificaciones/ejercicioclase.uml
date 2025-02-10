@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_fNF-oOTBEe-1_6M1n7g5yQ" name="ejercicioclase">
+  <eAnnotations xmi:id="_fNF-oeTBEe-1_6M1n7g5yQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_fNF-ouTBEe-1_6M1n7g5yQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-o-TBEe-1_6M1n7g5yQ" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fNF-pOTBEe-1_6M1n7g5yQ" name="CPIFP">
+    <ownedAttribute xmi:id="_fNF-peTBEe-1_6M1n7g5yQ" name="departamento" visibility="public" type="_fNF-6OTBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF-2uTBEe-1_6M1n7g5yQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-puTBEe-1_6M1n7g5yQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF-p-TBEe-1_6M1n7g5yQ" name="estudiante" visibility="public" type="_fNF-3-TBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF-3OTBEe-1_6M1n7g5yQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-qOTBEe-1_6M1n7g5yQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF-qeTBEe-1_6M1n7g5yQ" name="nombre" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF-quTBEe-1_6M1n7g5yQ" name="direccion" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF-q-TBEe-1_6M1n7g5yQ" name="telefono" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_fNF-rOTBEe-1_6M1n7g5yQ" name="añadirEstudiante" visibility="public">
+      <ownedParameter xmi:id="_fNF-reTBEe-1_6M1n7g5yQ" name="nombre" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-ruTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-r-TBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-sOTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF-seTBEe-1_6M1n7g5yQ" name="idEstudiante" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-suTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-s-TBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-tOTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fNF-teTBEe-1_6M1n7g5yQ" name="quitarEstudiante" visibility="public">
+      <ownedParameter xmi:id="_fNF-tuTBEe-1_6M1n7g5yQ" name="idEstudiante" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-t-TBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-uOTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-ueTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fNF-uuTBEe-1_6M1n7g5yQ" name="listadoEstudiante" visibility="public">
+      <ownedParameter xmi:id="_fNF-u-TBEe-1_6M1n7g5yQ" name="nombreEstudiante" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-vOTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-veTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-vuTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF-v-TBEe-1_6M1n7g5yQ" name="idEstudiante" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-wOTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-weTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-wuTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF-w-TBEe-1_6M1n7g5yQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-xOTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-xeTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-xuTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fNF-x-TBEe-1_6M1n7g5yQ" name="añadirDepart" visibility="public">
+      <ownedParameter xmi:id="_fNF-yOTBEe-1_6M1n7g5yQ" name="nombreDepart" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-yeTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-yuTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-y-TBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fNF-zOTBEe-1_6M1n7g5yQ" name="quitarDepart" visibility="public">
+      <ownedParameter xmi:id="_fNF-zeTBEe-1_6M1n7g5yQ" name="nombreDepart" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-zuTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-z-TBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-0OTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fNF-0eTBEe-1_6M1n7g5yQ" name="listadoDepart" visibility="public">
+      <ownedParameter xmi:id="_fNF-0uTBEe-1_6M1n7g5yQ" name="nombreDepart" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-0-TBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-1OTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-1eTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF-1uTBEe-1_6M1n7g5yQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-1-TBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-2OTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-2eTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fNF-2uTBEe-1_6M1n7g5yQ" memberEnd="_fNF-peTBEe-1_6M1n7g5yQ _fNF-2-TBEe-1_6M1n7g5yQ">
+    <ownedEnd xmi:id="_fNF-2-TBEe-1_6M1n7g5yQ" visibility="public" type="_fNF-pOTBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF-2uTBEe-1_6M1n7g5yQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fNF-3OTBEe-1_6M1n7g5yQ" memberEnd="_fNF-p-TBEe-1_6M1n7g5yQ _fNF-3eTBEe-1_6M1n7g5yQ">
+    <ownedEnd xmi:id="_fNF-3eTBEe-1_6M1n7g5yQ" visibility="public" type="_fNF-pOTBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF-3OTBEe-1_6M1n7g5yQ">
+      <ownedComment xmi:id="_fNF-3uTBEe-1_6M1n7g5yQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fNF-3-TBEe-1_6M1n7g5yQ" name="Estudiante">
+    <ownedAttribute xmi:id="_fNF-4OTBEe-1_6M1n7g5yQ" name="modulo" visibility="public" type="_fNF_KOTBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF-5OTBEe-1_6M1n7g5yQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-4eTBEe-1_6M1n7g5yQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF-4uTBEe-1_6M1n7g5yQ" name="nombreEstudiante" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF-4-TBEe-1_6M1n7g5yQ" name="idEstudiante" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fNF-5OTBEe-1_6M1n7g5yQ" memberEnd="_fNF-4OTBEe-1_6M1n7g5yQ _fNF-5eTBEe-1_6M1n7g5yQ">
+    <ownedEnd xmi:id="_fNF-5eTBEe-1_6M1n7g5yQ" visibility="public" type="_fNF-3-TBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF-5OTBEe-1_6M1n7g5yQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-5uTBEe-1_6M1n7g5yQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-5-TBEe-1_6M1n7g5yQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fNF-6OTBEe-1_6M1n7g5yQ" name="Departamento">
+    <ownedAttribute xmi:id="_fNF-6eTBEe-1_6M1n7g5yQ" name="profesor" visibility="public" type="_fNF_H-TBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF_GuTBEe-1_6M1n7g5yQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-6uTBEe-1_6M1n7g5yQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF-6-TBEe-1_6M1n7g5yQ" name="modulo" visibility="public" type="_fNF_KOTBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF_HeTBEe-1_6M1n7g5yQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-7OTBEe-1_6M1n7g5yQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF-7eTBEe-1_6M1n7g5yQ" name="nombreDepat" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_fNF-7uTBEe-1_6M1n7g5yQ" name="añadirProfesor" visibility="public">
+      <ownedParameter xmi:id="_fNF-7-TBEe-1_6M1n7g5yQ" name="nombreProfesor" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-8OTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-8eTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-8uTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF-8-TBEe-1_6M1n7g5yQ" name="especialidad" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-9OTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-9eTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-9uTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF-9-TBEe-1_6M1n7g5yQ" name="jefeDepartamento" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF--OTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF--eTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF--uTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fNF---TBEe-1_6M1n7g5yQ" name="quitarProfesor" visibility="public">
+      <ownedParameter xmi:id="_fNF-_OTBEe-1_6M1n7g5yQ" name="nombreProfesor" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF-_eTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF-_uTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF-_-TBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF_AOTBEe-1_6M1n7g5yQ" name="especialidad" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF_AeTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF_AuTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF_A-TBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fNF_BOTBEe-1_6M1n7g5yQ" name="listarProfesorado" visibility="public">
+      <ownedParameter xmi:id="_fNF_BeTBEe-1_6M1n7g5yQ" name="nombreProfesor" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF_BuTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF_B-TBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF_COTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF_CeTBEe-1_6M1n7g5yQ" name="especialidad" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF_CuTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF_C-TBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF_DOTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF_DeTBEe-1_6M1n7g5yQ" name="jefeDepart" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF_DuTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF_D-TBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF_EOTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_fNF_EeTBEe-1_6M1n7g5yQ" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF_EuTBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF_E-TBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF_FOTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fNF_FeTBEe-1_6M1n7g5yQ" name="obtenerProfesor" visibility="public">
+      <ownedParameter xmi:id="_fNF_FuTBEe-1_6M1n7g5yQ" name="nombreProfesor" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF_F-TBEe-1_6M1n7g5yQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF_GOTBEe-1_6M1n7g5yQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fNF_GeTBEe-1_6M1n7g5yQ" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fNF_GuTBEe-1_6M1n7g5yQ" memberEnd="_fNF-6eTBEe-1_6M1n7g5yQ _fNF_G-TBEe-1_6M1n7g5yQ">
+    <ownedEnd xmi:id="_fNF_G-TBEe-1_6M1n7g5yQ" name="jefeDepartamento" visibility="public" type="_fNF-6OTBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF_GuTBEe-1_6M1n7g5yQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF_HOTBEe-1_6M1n7g5yQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fNF_HeTBEe-1_6M1n7g5yQ" memberEnd="_fNF-6-TBEe-1_6M1n7g5yQ _fNF_HuTBEe-1_6M1n7g5yQ">
+    <ownedEnd xmi:id="_fNF_HuTBEe-1_6M1n7g5yQ" visibility="public" type="_fNF-6OTBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF_HeTBEe-1_6M1n7g5yQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fNF_H-TBEe-1_6M1n7g5yQ" name="Profesor">
+    <ownedAttribute xmi:id="_fNF_IOTBEe-1_6M1n7g5yQ" name="modulo" visibility="public" type="_fNF_KOTBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF_JOTBEe-1_6M1n7g5yQ"/>
+    <ownedAttribute xmi:id="_fNF_IeTBEe-1_6M1n7g5yQ" name="nombre" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF_IuTBEe-1_6M1n7g5yQ" name="especialidad" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF_I-TBEe-1_6M1n7g5yQ" name="jefeDepartamento" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fNF_JOTBEe-1_6M1n7g5yQ" memberEnd="_fNF_IOTBEe-1_6M1n7g5yQ _fNF_JeTBEe-1_6M1n7g5yQ">
+    <ownedEnd xmi:id="_fNF_JeTBEe-1_6M1n7g5yQ" visibility="public" type="_fNF_H-TBEe-1_6M1n7g5yQ" isUnique="false" association="_fNF_JOTBEe-1_6M1n7g5yQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNF_JuTBEe-1_6M1n7g5yQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNF_J-TBEe-1_6M1n7g5yQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fNF_KOTBEe-1_6M1n7g5yQ" name="Modulo">
+    <ownedAttribute xmi:id="_fNF_KeTBEe-1_6M1n7g5yQ" name="nombre" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNF_KuTBEe-1_6M1n7g5yQ" name="idModulo" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>
