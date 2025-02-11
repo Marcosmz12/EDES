@@ -8,7 +8,7 @@ public class Invoice {
         this.invoiceNumber = invoiceNumber;
         this.customerName = customerName;
         this.subtotal = subtotal;
-        this.tax = subtotal * 0.15;
+        this.tax = calculateTax();
     }
 
     public void printInvoiceHeader(){
@@ -27,7 +27,7 @@ public class Invoice {
         return subtotal * 0.15;
     }
 
-    public double getTotalAmountWithTax() {
+    public double getSubtotalWithTax() {
         return subtotal + calculateTax();
     }
 
@@ -36,8 +36,8 @@ public class Invoice {
     }
 
     public void applyDiscountAndUpdateTax(double discountPercentage) {
-        subtotal = subtotal - (subtotal * discountPercentage / 100);
-        tax = subtotal * 0.15;
+        double resultado = subtotal - (subtotal * discountPercentage / 100);
+        calculateTax();
     }
     
     private double recalculateTax() {
@@ -45,8 +45,8 @@ public class Invoice {
     }
 
     public void printDiscountDetails() {
-        String.format("Discount Applied: " , subtotal);
-        String.format("New Tax Amount: " , tax);
+        String.format("Discount Applied: " , discountPercentage);
+        String.format("New Tax Amount: " , calculateTax());
         String.format("Amount After Discount: " , (subtotal + tax));
     }
 }
