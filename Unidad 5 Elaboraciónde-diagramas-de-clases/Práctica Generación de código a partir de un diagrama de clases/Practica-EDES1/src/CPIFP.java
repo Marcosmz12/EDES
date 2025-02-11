@@ -18,52 +18,52 @@ public class CPIFP implements Senializable {
         this.nombreFichero = nombreFichero;
     }
 
-    public boolean añadirEstudiante(int idEstudiante, String nombre){
+    public boolean añadirEstudiante(int idEstudiante, String nombre) {
         try {
-                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(nombreFichero, true));
-                String estudiante = serializar(new Estudiante(nombre, idEstudiante));
-                bufferedWriter.write(estudiante + "\n");
-                bufferedWriter.close();
-                System.out.println("Estudiante añadido");
-                return(true);            
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(nombreFichero, true));
+            String estudiante = serializar(new Estudiante(nombre, idEstudiante));
+            bufferedWriter.write(estudiante + "\n");
+            bufferedWriter.close();
+            return (true);
         } catch (IOException e) {
             System.out.println(e.getMessage());
-            return(false);
+            return (false);
         }
     }
 
     public boolean borrarEstudiante(int idEstudiante) {
         boolean borrar = false;
         try {
-            String linea = "";
+            String linea;
             File ficheroOriginal = new File(nombreFichero);
             File ficheroTemporal = new File(nombreFichero + ".tmp");
-            ficheroOriginal.renameTo(ficheroTemporal);
-            BufferedReader bReader = new BufferedReader(new FileReader(ficheroOriginal + ".tmp"));
+            BufferedReader bReader = new BufferedReader(new FileReader(ficheroOriginal));
             BufferedWriter bWriter = new BufferedWriter(new FileWriter(ficheroTemporal));
             while ((linea = bReader.readLine()) != null) {
-                if (deserializar(linea).equals(idEstudiante)) {
-                    borrar = true;
-                } else {
+                Estudiante estudiante = (Estudiante) deserializar(linea);
+                if (estudiante.getIdEstudiante() != idEstudiante) {
                     bWriter.write(linea + "\n");
-                }
-                bReader.close();
-                bWriter.close();
-                if (borrar) {
-                    ficheroTemporal.delete();
-                    ficheroOriginal.renameTo(ficheroTemporal);
                 } else {
-                    ficheroTemporal.delete();
-                    
+                    System.out.println("Estudiante borrado: " + estudiante.getNombre());
+                    borrar = true;
                 }
-                
+            }
+            bReader.close();
+            bWriter.close();
+
+            if (borrar) {
+                ficheroOriginal.delete();
+                ficheroTemporal.renameTo(ficheroOriginal);
+            } else {
+                ficheroTemporal.delete();
             }
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
+
         return borrar;
     }
-    
+
     public String mostrarEstudiantes() {
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(nombreFichero));
@@ -74,7 +74,7 @@ public class CPIFP implements Senializable {
             bufferedReader.close();
             return linea;
         } catch (IOException e) {
-            return(e.getMessage());
+            return (e.getMessage());
         }
     }
 
