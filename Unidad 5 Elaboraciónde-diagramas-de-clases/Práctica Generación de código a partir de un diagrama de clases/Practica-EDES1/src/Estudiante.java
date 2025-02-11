@@ -25,6 +25,6 @@ public class Estudiante {
 
     @Override
     public String toString() {
-        return "Estudiante:[ " + "idEstudiante: " + idEstudiante + ", nombre: " + nombre + "]";
+        return "Estudiante:[" + "idEstudiante: " + idEstudiante + ", nombre: " + nombre + "]";
     }
 }
