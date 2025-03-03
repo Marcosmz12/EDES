@@ -4,13 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "GestorCPIFP",
-            "request": "launch",
-            "mainClass": "GestorCPIFP",
-            "projectName": "Practica-EDES1_170ad04d"
-        },
+
         {
             "type": "java",
             "name": "Current File",
@@ -22,8 +16,8 @@
             "name": "GestorCPIFP",
             "request": "launch",
             "mainClass": "GestorCPIFP",
-            "projectName": "Practica-EDES1_812e939a",
-            "args": "./src/mifichero.txt"
+            "projectName": "Practica-EDES1_7664edec",
+            "args": "src/mifichero.txt"
         }
     ]
 }

@@ -1,7 +1,7 @@
 public class GestorCPIFP {
     public static void main(String[] args) throws Exception {
         if (args.length != 1) {
-            System.out.println("");
+            System.out.println("Error: Debes introducir un argumento con el nombre del centro.");
         } else {
             CPIFP micentro = new CPIFP("Alan Turing", " C. Frederick Terman", 658564506, args[0]);
             int opcion;
